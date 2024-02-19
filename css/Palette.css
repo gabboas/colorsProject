@@ -1,40 +1,51 @@
-#Palettes{
-    display: flex;    
+#Palettes {
+  display: flex;
 }
 
-#Palette_colordiv1{
-    background-color: rgb(163, 163, 207);
-    height: calc(100vh - 122px);
-    width: 100vw;
+#Palette_colordiv1 {
+  background-color: rgb(163, 163, 207);
+  height: calc(100vh - 122px);
+  width: 100vw;
 }
 
-#Palette_colordiv2{
-    background-color: rgb(45, 45, 85);
-    height: calc(100vh - 122px);
-    width: 100vw;
+#Palette_colordiv2 {
+  background-color: rgb(45, 45, 85);
+  height: calc(100vh - 122px);
+  width: 100vw;
 }
 
-#Palette_colordiv3{
-    background-color: rgb(10, 10, 56);
-    height: calc(100vh - 122px);
-    width: 100vw;
+#Palette_colordiv3 {
+  background-color: rgb(10, 10, 56);
+  height: calc(100vh - 122px);
+  width: 100vw;
 }
 
-#Palette_colordiv4{
-    background-color: rgb(14, 14, 207);
-    height: calc(100vh - 122px);
-    width: 100vw;
+#Palette_colordiv4 {
+  background-color: rgb(14, 14, 207);
+  height: calc(100vh - 122px);
+  width: 100vw;
 }
 
-#Palette_colordiv5{
-    background-color: rgb(36, 36, 37);
-    height: calc(100vh - 122px);
-    width: 100vw;
+#Palette_colordiv5 {
+  background-color: rgb(36, 36, 37);
+  height: calc(100vh - 122px);
+  width: 100vw;
 }
 
-#Palette__hiddendiv{
-    background-color: rgb(248, 248, 252);
-    height: calc(100vh - 122px);
-    width: 100vw;
-    display: none;
+#Palette__hiddendiv {
+  background-color: rgb(248, 248, 252);
+  height: calc(100vh - 122px);
+  width: 100vw;
+  display: none;
+}
+
+.Palette__colorbox {
+  align-items: center;
+  display:flex;
+  justify-content: center; 
+}
+
+.Palette__colorboxSpan{
+   font-size: large;
+   font-weight: bold; 
 }
