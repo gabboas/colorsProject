@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
-   width="50"
-   height="50"
+<svg style="width: 50px; height: 50px; display: inline-block;"
+   width="50px"
+   height="50px"
    viewBox="0 0 132.29167 132.29166"
    version="1.1"
    id="svg1"
@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      inkscape:zoom="5.537542"
-     inkscape:cx="50.834829"
+     inkscape:cx="51.015414"
      inkscape:cy="50.654243"
      inkscape:window-width="1920"
      inkscape:window-height="991"
@@ -38,26 +38,30 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-dasharray:none"
-       id="path1"
-       cx="95.851105"
-       cy="61.906395"
-       r="17.391891"
-       inkscape:export-filename="Icon1.jpg"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-dasharray:none"
-       d="M 46.92695,28.174926 23.857453,68.058986 H 70.490659 Z"
-       id="path2"
-       sodipodi:nodetypes="cccc" />
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-dasharray:none"
-       id="rect2"
-       width="32.163803"
-       height="31.623236"
-       x="48.266277"
-       y="81.612404" />
+    <g
+       id="g1">
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-dasharray:none"
+         id="path1"
+         cx="95.851105"
+         cy="61.906395"
+         r="17.391891"
+         inkscape:export-filename="Icon1.jpg"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-dasharray:none"
+         d="M 46.92695,28.174926 23.857453,68.058986 H 70.490659 Z"
+         id="path2"
+         sodipodi:nodetypes="cccc" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-dasharray:none"
+         id="rect2"
+         width="32.163803"
+         height="31.623236"
+         x="48.266277"
+         y="81.612404" />
+    </g>
   </g>
 </svg>
+
