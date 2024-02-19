@@ -1,0 +1,22 @@
+#toolsdiv{
+    display: flex;
+    border-bottom: solid grey 1px;
+    padding: 2.5px 10px 2.5px 10px;
+    max-height: 56px;
+}
+
+.toolsdiv__items{
+    padding: 2.5px 10px 2.5px 10px; 
+    width:36px;
+    height: 36px;  
+}
+
+.toolsdiv__itemsh4{
+    padding: 2.5px 10px 2.5px 10px; 
+}
+
+#toolsdiv__tools{
+    position: relative;
+    left: 25%;
+    padding: 2.5px 10px 2.5px 10px;
+}
