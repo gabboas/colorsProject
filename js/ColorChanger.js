@@ -12,6 +12,8 @@ function applyColor() {
   let colorBox = document.getElementsByClassName("Palette__colorbox");
   let colorBoxArray = Array.from(colorBox);
   colorBoxArray.forEach(function (colorBox) {
+    if (colorBox.getAttribute("data-locked") === "1") return;
+
     //this
     let existingSpan = colorBox.querySelector(".Palette__colorboxSpan");
     while (existingSpan) {
