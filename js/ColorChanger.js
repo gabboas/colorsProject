@@ -8,14 +8,12 @@ function getRandomColor() {
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
-// Apply to all available colours that aren't locked
-// 1. Identify whether element is locked or not | use data-attribute for this
-// 2. If it's locked, do nothing return;
-// 3. Apply the colour
 function applyColor() {
   let colorBox = document.getElementsByClassName("Palette__colorbox");
   let colorBoxArray = Array.from(colorBox);
-  colorBoxArray.forEach(function (colorBox) {
+  colorBoxArray.forEach(function(colorBox) {
+    if (colorBox.getAttribute("data-locked") === "1") return;
+
     //this
     let existingSpan = colorBox.querySelector(".Palette__colorboxSpan");
     while (existingSpan) {
@@ -32,13 +30,13 @@ function applyColor() {
   });
 }
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function(event) {
   if (event.key === " ") {
     applyColor();
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   applyColor();
 });
 

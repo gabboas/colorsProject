@@ -47,14 +47,18 @@ export function padLock(actionDiv) {
   let lock = actionDiv.getAttribute("data-locked");
   let unlocked = actionDiv.querySelector(".open_lock");
   let locked = actionDiv.querySelector(".locked");
+  const colorBox = actionDiv.closest(".Palette__colorbox")
+
   if (lock === "0") {
     unlocked.style.display = "none";
     locked.style.display = "block";
     actionDiv.setAttribute("data-locked", "1");
+    colorBox.setAttribute("data-locked", "1");
   } else if (lock === "1") {
     locked.style.display = "none";
     unlocked.style.display = "block";
     actionDiv.setAttribute("data-locked", "0");
+    colorBox.setAttribute("data-locked", "0");
   }
 }
 
