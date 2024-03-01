@@ -3,10 +3,12 @@
     border-bottom: solid grey 1px;
     padding: 2.5px 10px 2.5px 10px;
     max-height: 56px;
+    width: 100vw;
+    align-items: center;
 }
 
 .toolsdiv__items{
-    padding: 2.5px 10px 2.5px 10px; 
+    margin: 0 5px 0 5px;
     width:36px;
     height: 36px;  
 }
@@ -16,7 +18,17 @@
 }
 
 #toolsdiv__tools{
-    position: relative;
-    left: 25%;
-    padding: 2.5px 10px 2.5px 10px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.divider{
+height: 30px;
+width: 1px;
+background-color: rgba(0, 0, 0, 0.075);
+margin:10px;
 }
