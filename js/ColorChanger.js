@@ -8,10 +8,6 @@ function getRandomColor() {
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
-// Apply to all available colours that aren't locked
-// 1. Identify whether element is locked or not | use data-attribute for this
-// 2. If it's locked, do nothing return;
-// 3. Apply the colour
 function applyColor() {
   let colorBox = document.getElementsByClassName("Palette__colorbox");
   let colorBoxArray = Array.from(colorBox);
