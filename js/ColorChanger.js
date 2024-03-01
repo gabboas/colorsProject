@@ -11,7 +11,7 @@ function getRandomColor() {
 function applyColor() {
   let colorBox = document.getElementsByClassName("Palette__colorbox");
   let colorBoxArray = Array.from(colorBox);
-  colorBoxArray.forEach(function (colorBox) {
+  colorBoxArray.forEach(function(colorBox) {
     if (colorBox.getAttribute("data-locked") === "1") return;
 
     //this
@@ -30,13 +30,13 @@ function applyColor() {
   });
 }
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function(event) {
   if (event.key === " ") {
     applyColor();
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   applyColor();
 });
 
