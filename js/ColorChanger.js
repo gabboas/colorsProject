@@ -1,3 +1,4 @@
+import { padLock, actionDivs, click, lock } from "./colorBoxTools.js";
 //I want to press space and it should generate 1 diffenret color in each palette div.
 
 function getRandomColor() {
@@ -7,17 +8,21 @@ function getRandomColor() {
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
+// Apply to all available colours that aren't locked
+// 1. Identify whether element is locked or not | use data-attribute for this
+// 2. If it's locked, do nothing return;
+// 3. Apply the colour
 function applyColor() {
-  let colorBoxes = document.getElementsByClassName("Palette__colorbox");
-  let colorBoxArray = Array.from(colorBoxes);
+  let colorBox = document.getElementsByClassName("Palette__colorbox");
+  let colorBoxArray = Array.from(colorBox);
   colorBoxArray.forEach(function (colorBox) {
-//this
-    let existingSpan = colorBox.querySelector('.Palette__colorboxSpan');
+    //this
+    let existingSpan = colorBox.querySelector(".Palette__colorboxSpan");
     while (existingSpan) {
       colorBox.removeChild(existingSpan);
-      existingSpan = colorBox.querySelector('.Palette__colorboxSpan'); 
+      existingSpan = colorBox.querySelector(".Palette__colorboxSpan");
     }
-//
+    //
     let divColor = getRandomColor();
     colorBox.style.backgroundColor = divColor;
     let colorBoxSpan = document.createElement("span");
@@ -33,9 +38,8 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function(){ 
-    applyColor();
+document.addEventListener("DOMContentLoaded", function () {
+  applyColor();
 });
-
 
 //To put the fontcolor when brightness is > || < 40.//

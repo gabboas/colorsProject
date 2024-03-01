@@ -12,56 +12,112 @@
         <nav>
           <ul>
             <div id="Nav__coolersdiv">
-            <li><a href="index.html"></a>Coolors</li>
+              <li><a href="index.html"></a>Coolors</li>
             </div>
             <li>
               <span>
                 <div>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-                </div>
-              </span>Tools</li>   
-            <li><button>Go Pro</button></li>         
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div> </span
+              >Tools
+            </li>
+            <li><button>Go Pro</button></li>
             <li><button>Signin</button></li>
             <li><button>Signin</button></li>
           </ul>
         </nav>
       </div>
       <div id="toolsdiv">
-        <h4 id="toolsdiv__h4" class="toolsdiv__itemsh4">Press the spacebar to generate color palettes</h4>
+        <h4 id="toolsdiv__h4" class="toolsdiv__itemsh4">
+          Press the spacebar to generate color palettes
+        </h4>
         <div id="toolsdiv__tools">
-         <button class="toolsdiv__items"></button>
           <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-          <a class="toolsdiv__items"><img src="Icons_colorsProject.svg"></img>
-         </a>
-         <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-         <button class="toolsdiv__items"></button>
-          <span class="toolsdiv__items">
-           <div id="toolsdiv__spanelement1" class="toolsdiv__spanelement"></div>
-           <div id="toolsdiv__spanelement2" class="toolsdiv__spanelement"></div>
-           <div id="toolsdiv__spanelement3" class="toolsdiv__spanelement"></div>
+          <span class="divider"></span>
+          <button class="toolsdiv__items"></button>
+          <span class="divider"></span>
+          <button class="toolsdiv__items"></button>
+          <button class="toolsdiv__items"></button>
+          <span class="divider"></span>
+          <a class="toolsdiv__items"><img src="Icons_colorsProject.svg" /> </a>
+          <button class="toolsdiv__items"></button>
+          <button class="toolsdiv__items"></button>
+          <button class="toolsdiv__items"></button>
+          <button class="toolsdiv__items"></button>
+          <span class="divider"></span>
+          <button class="toolsdiv__items"></button>
+          <button class="toolsdiv__items"></button>
+          <button class="toolsdiv__items"></button>
+          <span class="divider"></span>
+          <span class="toolsdiv__items" id="menutoggle__span">
+            <div
+              id="toolsdiv__spanelement1"
+              class="toolsdiv__spanelement"
+            ></div>
+            <div
+              id="toolsdiv__spanelement2"
+              class="toolsdiv__spanelement"
+            ></div>
+            <div
+              id="toolsdiv__spanelement3"
+              class="toolsdiv__spanelement"
+            ></div>
           </span>
         </div>
-      </div>      
+      </div>
     </header>
     <div id="Palettes">
-      <div id="Palette_colordiv1" class="Palette__colorbox"></div>
-      <div id="Palette_colordiv2" class="Palette__colorbox"></div>
-      <div id="Palette_colordiv3" class="Palette__colorbox"></div>
-      <div id="Palette_colordiv4" class="Palette__colorbox"></div>
-      <div id="Palette_colordiv5" class="Palette__colorbox"></div>
-      <div id="Palette__hiddendiv"></div>
+      <div id="Palette_colordiv1" class="Palette__colorbox">
+        <img src="content_copy.svg" class="Palettes__colorcopy"/>
+        <!---->
+        <div style="display: block" class="Palettes__lockDiv" data-locked="0">
+          <img src="lock_open.svg" class="open_lock" class="padLock"/>
+          <img src="lock_.svg" class="locked" class="padLock"/>
+        </div>
+      </div>
+      <!---->
+      <div id="Palette_colordiv2" class="Palette__colorbox">
+        <img src="content_copy.svg" class="Palettes__colorcopy"/>
+        <div style="display: block" class="Palettes__lockDiv" data-locked="0">
+          <img src="lock_open.svg" class="open_lock" />
+          <img src="lock_.svg" class="locked" />
+        </div>
+      </div>
+      <div id="Palette_colordiv3" class="Palette__colorbox">
+        <img src="content_copy.svg" class="Palettes__colorcopy"/>
+        <div style="display: block" class="Palettes__lockDiv" data-locked="0">
+          <img src="lock_open.svg" class="open_lock" />
+          <img src="lock_.svg" class="locked" />
+        </div>
+      </div>
+      <div id="Palette_colordiv4" class="Palette__colorbox">
+        <img src="content_copy.svg" class="Palettes__colorcopy"/>
+        <div style="display: block" class="Palettes__lockDiv" data-locked="0">
+          <img src="lock_open.svg" class="open_lock" />
+          <img src="lock_.svg" class="locked" />
+        </div>
+      </div>
+      <div id="Palette_colordiv5" class="Palette__colorbox">
+        <img src="content_copy.svg" class="Palettes__colorcopy"/>
+        <div style="display: block" class="Palettes__lockDiv" data-locked="0">
+          <img src="lock_open.svg" class="open_lock" />
+          <img src="lock_.svg" class="locked" />
+        </div>
+      </div>
+      <div id="Palette__hiddendiv">
+        <div id="Palette__hiddenSubdiv">
+          <span>Library</span>
+          <span>Explore</span>
+        </div>
+        <span id="Palette__hiddendivSpan"></span>
+      </div>
     </div>
-    <script src="js/ColorChanger.js"></script>
+    <script src="js/ColorChanger.js" type="module"></script>
+    <script src="js/Menutoggle.js"></script>
+    <script src="js/colorBoxTools.js" type="module"></script>
   </body>
 </html>
